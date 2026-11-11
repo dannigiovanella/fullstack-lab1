@@ -28,18 +28,140 @@
         </nav>
     </header>
 
-        <main>
-            <section>
-                <h1>CSS-ramverk: Bootstrap</h1>
-                <p>Min laborationssida med Bootstrap.</p>
+
+<main>
+
+    <!-- Introduktion -->
+    <section>
+        <h1>Ramverk: Bootstrap</h1>
+        <p>Introduktion till Bootstrap och dess användningsområden.</p>
+    </section>
+
+    <!-- Information om ramverket -->
+    <section>
+        <h2>Om Bootstrap</h2>
+        <p>Information om ramverket och hur det fungerar</p>
+    </section>
+
+    <!--Fördelar och nackdelar-->
+    <section>
+        <h2>Fördelar och nackdelar</h2>
+
+        <div>
+            <h3>Fördelar</h3>
+            <ul>
+                <li>Fördel 1</li>
+                <li>Fördel 2</li>
+                <li>Fördel 3</li>
+            </ul>
+        </div>
+
+        <div>
+            <h3>Nackdelar</h3>
+            <ul>
+                <li>Nackdel 1</li>
+                <li>Nackdel 2</li>
+            </ul>
+        </div>
+    </section>
 
 
-                <button class="btn btn-primary">
-                    Testa Bootstrap
-                </button>
+    <!--TABELL OCH FORMULÄR--> 
+    
+    <!-- Komponentöversikt -->
+    <section>
+        <h2>Komponentöversikt</h2>
+        <p>Här visas några vanliga komponenter som används i webbdesign.</p>
 
-            </section>
-        </main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Komponent</th>
+                    <th>Användningsområde</th>
+                    <th>Responsiv</th>
+                    <th>Svårighetsgrad</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Navigation</td>
+                    <td>Navigera mellan sidor</td>
+                    <td>Ja</td>
+                    <td>Låg</td>
+                </tr>
+                <tr>
+                    <td>Button</td>
+                    <td>Knappar och interaktioner</td>
+                    <td>Ja</td>
+                    <td>Låg</td>
+                </tr>
+                <tr>
+                    <td>Card</td>
+                    <td>Samla innehåll i en yta</td>
+                    <td>Ja</td>
+                    <td>Medel</td>
+                </tr>
+                <tr>
+                    <td>Table</td>
+                    <td>Visa information i rader och kolumner</td>
+                    <td>Ja</td>
+                    <td>Medel</td>
+                </tr>
+                <tr>
+                    <td>Form</td>
+                    <td>Samla in information från användaren</td>
+                    <td>Ja</td>
+                    <td>Medel</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Formulär -->
+    <section>
+        <h2>Lägg till komponent</h2>
+        <p>Använd formuläret för att registrera en ny komponent i översikten.</p>
+
+        <form>
+            <div>
+                <label for="component-name">Komponentnamn</label>
+                <input type="text" id="component-name" name="component-name">
+            </div>
+
+            <div>
+                <label for="usage">Användningsområde</label>
+                <input type="text" id="usage" name="usage">
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="responsive">
+                    Responsiv
+                </label>
+            </div>
+
+            <div>
+                <label for="difficulty">Svårighetsgrad</label>
+                <select id="difficulty" name="difficulty">
+                    <option value="">Välj svårighetsgrad</option>
+                    <option value="low">Låg</option>
+                    <option value="medium">Medel</option>
+                    <option value="high">Hög</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="comment">Kommentar</label>
+                <textarea id="comment" name="comment"></textarea>
+            </div>
+
+            <button type="submit">Lägg till komponent</button>
+        </form>
+    </section>
+
+</main>
+
 
         <footer>
             <p>Daniela giovanella</p>
