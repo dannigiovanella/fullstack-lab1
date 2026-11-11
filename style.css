@@ -30,20 +30,35 @@ header {
     padding: 1.2rem;
 }
 
-nav {
-    max-width: 63rem;
+/*Navigering på start och publiceringssidan */
+.main-nav {
+    max-width: 623rem;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-nav a {
-    color:#657A68;
+.main-nav a {
+    color: #657A68;
     text-decoration: none;
+    transition: all 0.2s ease;
 }
 
-/* Huvudinnehåll */
+/*Hover-effekt */
+.main-nav a:hover {
+    color: #8C7899;
+    transform: translateY(-3px);
+}
+
+/*Aktiv sida*/
+.main-nav a.active {
+    color: #8C7899;
+    font-weight: bold;
+}
+
+
+/*Huvudinnehåll */
 main {
     max-width: 63rem;
     width: 100%;
@@ -53,7 +68,7 @@ main {
     flex: 1;
 }
 
-/* Footer */
+/*Footer */
 footer {
     background-color: #FFFFFF;
     border-top: 1px solid #dddddd;
