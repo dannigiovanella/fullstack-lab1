@@ -9,6 +9,17 @@
     --color-dark: #302F32;
     --color-white: #FFFFFF;
 }
+
+/*Grundinställningar */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-beige);
+    color: var(--color-dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
     
 
 /*Navigation*/
@@ -44,3 +55,37 @@
 
 /*TABELL*/
 
+/*FORMULÄR*/
+
+/*Begränsar formulärets bredd*/
+.form-group {
+    max-width: 40rem;
+    padding: 1.5rem;
+    border: 1px solid #D0D0D0;
+    border-radius: 8px;
+}
+
+/*Rubrik för formuläret*/
+.form-group legend {
+    color: var(--color-green);
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+
+/*Tydligare kantlinjer på formulärfält */
+.form-control,
+.form-select {
+    border: 1px solid #A6A6A6;
+}
+
+/*Formulärets labels*/
+.form-label,
+.form-check-label {
+    color: var(--color-dark);
+    font-weight: 500;
+}
+
+/*Tydligare border på checkboxen*/
+.form-check-input {
+    border: 1px solid #8C8C8C;
+}
