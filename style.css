@@ -1,21 +1,22 @@
 /*Globla CSS-inställninger*/
 
 /*Webbplatsens färger*/
-/*
+
+:root { 
     --color-green: #657A68;
     --color-purple: #8C7899;
     --color-pink: #D5A0A5;
     --color-beige: #F2EFE8;
     --color-dark: #302F32;
     --color-white: #FFFFFF;
-    */
+}
 
 /*Grundinställningar */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #F2EFE8;
-    color: #302F32;
+    background-color: var(--color-beige);
+    color: var(--color-dark);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,7 +24,7 @@ body {
 
 /* Header och navigering */
 header {
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     border-bottom: 1px solid #dddddd;
     padding: 1.2rem;
 }
@@ -38,20 +39,20 @@ header {
 }
 
 .main-nav a {
-    color: #657A68;
+    color: var(--color-green);
     text-decoration: none;
     transition: all 0.2s ease;
 }
 
 /*Hover-effekt */
 .main-nav a:hover {
-    color: #8C7899;
+    color: var(--color-purple);
     transform: translateY(-3px);
 }
 
 /*Aktiv sida*/
 .main-nav a.active {
-    color: #8C7899;
+    color: var(--color-purple);
     font-weight: bold;
 }
 
@@ -68,10 +69,10 @@ main {
 
 /*Footer */
 footer {
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     border-top: 1px solid #dddddd;
     padding: 1.2rem;
     text-align: center;
-    color: #302F32;
+    color: var(--color-dark);
     margin-top: 3rem;
 }

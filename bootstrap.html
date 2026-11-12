@@ -106,12 +106,17 @@
 
         <!--TABELL OCH FORMULÄR-->
 
+        <!--TABELL-->
         <!-- Komponentöversikt -->
         <section>
             <h2>Komponentöversikt</h2>
             <p>Här visas några vanliga komponenter som används i webbdesign.</p>
 
-            <table>
+            <!--wrapper för att göra tabellen responsiv. Skrollas i sidled-->
+            <div class="table-responsive">
+
+            <!--klass table för Bootstraps zebra randiga tabellstil med hovereffekt. i grön stil-->
+            <table class="table table-success table table-striped table-hover table-bordered">
                 <thead>
                     <tr>
                         <th>Komponent</th>
@@ -154,6 +159,7 @@
                     </tr>
                 </tbody>
             </table>
+            </div>
         </section>
 
         <!-- Formulär -->

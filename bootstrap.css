@@ -1,35 +1,36 @@
 /*CSS-fil för Bootstrap*/
 
 /*Webbplatsens färger*/
-/*
+:root {
     --color-green: #657A68;
     --color-purple: #8C7899;
     --color-pink: #D5A0A5;
     --color-beige: #F2EFE8;
     --color-dark: #302F32;
     --color-white: #FFFFFF;
-    */
+}
+    
 
 /*Navigation*/
 
 /*Navbar*/
 /*Bakgrundsfärg och padding*/
 .navbar {
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     padding: 1rem 1.2rem;
 }
 
 
 /*Färg på länkar */
 .navbar .nav-link {
-    color: #657A68;
+    color: var(--color-green); 
     transition: all 0.2s ease;
 }
 
 /*Färg när en länk markeras eller hovras över */
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-    color: #8C7899;
+    color: var(--color-purple);
     transform: translateY(-3px);
     font-weight: bold;
 }
@@ -37,6 +38,9 @@
 
 /*Anpassning av menyknappen för mindre skärmar. Grön border */
 .navbar .navbar-toggler {
-    border-color: #657A68;
+    border-color: var(--color-green); 
     border-width: 2px;
 }
+
+/*TABELL*/
+
