@@ -20,7 +20,30 @@ body {
     display: flex;
     flex-direction: column;
 }
-    
+
+/* RUBRIKER */
+
+/* Huvudrubrik */
+h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--color-green);
+}
+
+/* Sektionsrubriker */
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-purple);
+}
+
+/* Underrubriker */
+h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-green);
+}
+
 
 /*Navigation*/
 
@@ -34,7 +57,7 @@ body {
 
 /*Färg på länkar */
 .navbar .nav-link {
-    color: var(--color-green); 
+    color: var(--color-green);
     transition: all 0.2s ease;
 }
 
@@ -49,7 +72,7 @@ body {
 
 /*Anpassning av menyknappen för mindre skärmar. Grön border */
 .navbar .navbar-toggler {
-    border-color: var(--color-green); 
+    border-color: var(--color-green);
     border-width: 2px;
 }
 
