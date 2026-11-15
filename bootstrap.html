@@ -23,10 +23,14 @@
         <!--Navigation med Bootstrap. navbar-expand-lg bestämmer brytbunkt för när meny fälls ihop-->
         <nav class="navbar navbar-expand-lg">
 
-            <!--Container för navigeringens innehåll -->
+            <!--Container för navigeringens innehåll 
+            Använder hela tillgängliga bredd-->
             <div class="container-fluid">
 
-                <!--Knapp som visas när menyn fälls ihop på mindre skärmar -->
+                <!--Knapp som visas när menyn fälls ihop på mindre skärmar
+                data-bs-toggle aktiverar Bootstraps collapse-funktion.
+                data-bs-target pekar ut vilken del av menyn som ska visas.
+                -->
                 <!--Med Aria som anpassning-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
                     aria-controls="mainNavbar" aria-expanded="false" aria-label="Öppna navigering">
@@ -36,13 +40,17 @@
                 </button>
 
                 <!--Innehåll som fälls ihop på mindre skärmar -->
+
+                <!--collapse gör att menyn kan fällas ihop
+                navbar-collapse anpassar innehållet till navigeringen.
+                id används av menyknappen för att hitta rätt meny.
+                -->
                 <div class="collapse navbar-collapse" id="mainNavbar">
 
                     <!--Navigeringslänkar-->
                     <!--Active för markering av aktuell sida-->
                     <!--Anpassning med Aria för aktuell sida-->
                     <ul class="navbar-nav">
-
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Start</a>
                         </li>
@@ -88,8 +96,7 @@
             <!--Rubrik för sektionen. Med avstånd och textfärg-->
             <h2 class="mb-4">Fördelar och nackdelar</h2>
 
-            <!--
-            Lista för för och nackdelar.
+            <!--Lista för för och nackdelar.
             row skapar en rad i Bootstraps Grid-system.
             g-4 skapar mellanrum mellan kolumnerna.
             -->
@@ -101,9 +108,9 @@
 
                     <h3 class="mb-2">Fördelar</h3>
 
-                    <!--list-unstyled ger listan Bootstraps färdiga liststil på en ostylad lista-->
+                    <!-- list-unstyled tar bort listans punkter och indrag -->
                     <ul class="list-unstyled mb-0">
-                        <li cclass="mb-2">Fördel 1</li>
+                        <li class="mb-2">Fördel 1</li>
                         <li class="mb-2"">Fördel 2</li>
                         <li class=" mb-2">Fördel 3</li>
                     </ul>
@@ -114,7 +121,7 @@
                 <div class="col-12 col-md-6">
                     <h3 class="mb-2">Nackdelar</h3>
 
-                    <!--list-unstyled ger listan Bootstraps färdiga liststil på en ostylad lista-->
+                    <!-- list-unstyled tar bort listans punkter och indrag -->
                     <ul class="list-unstyled mb-0">
                         <li class="mb-2">Nackdel 1</li>
                         <li class="mb-2">Nackdel 2</li>
@@ -134,8 +141,14 @@
             <!--wrapper för att göra tabellen responsiv. Skrollas i sidled-->
             <div class="table-responsive">
 
-                <!--klass table för Bootstraps zebra randiga tabellstil med hovereffekt. i grön stil-->
-                <table class="table table-success table table-striped table-hover table-bordered">
+                    <!--table ger tabellen Bootstraps grundläggande utseende.
+                    table-success ger tabellhuvudet en grön färg.
+                    table-striped ger varannan rad en annan bakgrundsfärg.
+                    table-hover markerar raden när man hovrar över den.
+                    table-bordered lägger till ramar runt cellerna.
+                    -->
+                <table class="table table-success table-striped table-hover table-bordered">
+                    <!--Tabellens rubrikrad-->
                     <thead>
                         <tr>
                             <th>Komponent</th>
@@ -145,6 +158,7 @@
                         </tr>
                     </thead>
 
+                    <!--Tabellens innehåll-->
                     <tbody>
                         <tr>
                             <td>Navigation</td>
@@ -186,9 +200,13 @@
             <h2 class="mb-4">Lägg till komponent</h2>
             <p>Använd formuläret för att registrera en ny komponent i översikten.</p>
 
-            <form>
-                <!--Grupperar formuläret-->
-                <fieldset class="form-group">
+            <!--Grupperar formuläret
+            form-group är en egenskapad klass för gruppering-->
+            <form class="form-group">
+
+                <!--Fieldset för att gruppera formuläret-->
+                <fieldset>
+                    <!--Formulärets rubrik-->
                     <legend>Komponentinformation</legend>
 
                     <!--mb-3 skapar marginal mellan fälten-->
@@ -208,7 +226,7 @@
                         <input type="text" id="usage" name="usage" class="form-control">
                     </div>
 
-                    <!--Checkbox för responsivitet-->
+                    <!--Checkbox för responsivitet med Bootstraps styling-->
                     <div class="form-check mb-3">
                         <label class="form-check-label" for="responsive">Responsiv</label>
                         <input class="form-check-input" type="checkbox" id="responsive" name="responsive">
@@ -236,8 +254,10 @@
                     </div>
 
 
-                    <!--Knapp för att skicka formulär-->
-                    <!--Bootstraps gröna färg och 100% i bredd-->
+                    <!--Knapp för att skicka formulär
+                    btn ger knappen grundläggande Bootstrap-styling
+                    btn-success ger den en grön färg
+                    w-100 gör att knappen tar upp hela formulärets bredd-->
                     <button type="submit" class="btn btn-success w-100"">Lägg till komponent</button>
                 </fieldset>
             </form>

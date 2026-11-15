@@ -21,23 +21,20 @@ body {
     flex-direction: column;
 }
 
-/* RUBRIKER */
+/*RUBRIKER*/
 
-/* Huvudrubrik */
 h1 {
     font-size: 2.25rem;
     font-weight: 700;
     color: var(--color-green);
 }
 
-/* Sektionsrubriker */
 h2 {
     font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-purple);
 }
 
-/* Underrubriker */
 h3 {
     font-size: 1.125rem;
     font-weight: 600;
@@ -45,7 +42,7 @@ h3 {
 }
 
 
-/*Navigation*/
+/*NAVIGATION*/
 
 /*Navbar*/
 /*Bakgrundsfärg och padding*/
@@ -58,6 +55,7 @@ h3 {
 /*Färg på länkar */
 .navbar .nav-link {
     color: var(--color-green);
+    font-weight: 500;
     transition: all 0.2s ease;
 }
 
