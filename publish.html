@@ -26,17 +26,99 @@
             <!--Huvudrubrik-->
             <h1>Publisering</h1>
 
-            <!--Underrubrik-->
-            <h2>Publisering med Vercel</h2>
+            <!--Fördelar och nackdelar.-->
+            <section>
+                <!--Underrubrik-->
+                <h2>Om Vercel</h2>
+                <p>Vercel är en plattform som används för att publicera webbplatser och webbapplikationer. Den är
+                    anpassad för att kunna publicera projket direkt från ett Git-repository från exempelvis Github.
+                    Vercel bygger och publicerar webbplatsen automatiskt och ger den en egen webbadress som sedan går
+                    att själv också går att ändra.</p>
 
+                <!--Underrubrik-->
+                <h2>Kodstöd och kostnad</h2>
+                <p>Vercel stödjer flera olika tekniker och ramverk. Det går bland annat att publicera webbplatser so
+                    använder HTML, CSS, JavaScript och med frontend-ramverk som React, Vue, Angular och Next.js. Det
+                    finns även stöd för backend med olika programmeringsspråk och miljöer som exempelvis Node.js och
+                    Python.</p>
 
-        </section>
+                <p>I den här laborationen har jag använt mig av HTML, CSS, JavaSript och med CSS-ramverken Bootstrap och
+                    Tailwind. Vite har även använts som utvecklingsmiljö och det är Distmappen som Vite skapar vid
+                    byggprocessen som Vercel använder för att bygga webbplatsen.</p>
+
+                <p>Det finns olika prisplaner i Vercel. Hobby är en gratisplan som främst är avsedd för mindre och
+                    personliga projekt, men det finns även en betalversion för större och mer avancerade projekt. För
+                    denna lilla laboration räckte dock gratisversionen väl.</p>
+
+                <!--Rubrik för sektionen.-->
+                <h2>Fördelar och nackdelar</h2>
+
+                <!--Lista för för och nackdelar.-->
+                <div>
+
+                    <!--Kolumn med fördelar-->
+                    <div>
+                        <h3 class="mb-2">Fördelar</h3>
+
+                        <!--Lista med fördelar-->
+                        <ul>
+                            <li>Det är enkelt att koppla ett projekt till GitHub och publicera direkt från plattformen.
+                            </li>
+                            <li>Vid användning av Vite känner Vercel av detta och anpassar inställningarna inför
+                                publicering automatiskt för detta.</li>
+                            <li>Enkelt gränssnitt att förstå för att publicera.</li>
+                            <li>Publiceringen sker automatiskt när nya ändringar görs i det anslutna Git-repot.</li>
+                            <li>Vercel skapar en webbadress som gör webbplatsen tillgänglig på internet.</li>
+                            <li>Det finns en kostnadsfri plan som fungerar bra för mindre, personliga projekt.</li>
+                            <li>Det går att se loggar för publiceringen och kontrollera om publiceringen har lyckats.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!--Kolumn med nackdelar-->
+                    <div>
+                        <h3>Nackdelar</h3>
+
+                        <!--Lista med nackdelar-->
+                        <ul>
+                            <li>Projektet behöver vara korrekt konfigurerat för att byggas och publiceras.</li>
+                            <li>Gratisversionen har begränsningar och är inte avsedd för större projekt eller
+                                kommersiell användning.</li>
+                            <li>Om något blir fel under byggprocessen kan det krävas felsökning innan webbplatsen kan
+                                publiceras.</li>
+                        </ul>
+                    </div>
+            </section>
+
+            <section>
+                <!--Rubrik för sektionen-->
+                <h2>Publiceringsprocess</h2>
+
+                <p>För att publicera webbplatsen började jag med att skapa ett konto på Vercel och koppla det till mitt
+                    GitHub-konto då detta är första gången jag testar på att publicera på denna via Vercel. Därefter
+                    importerade jag projektets repo från Github och kontrollerade inställningarna för bygget. Vercel gav
+                    mycket gratis vid inställningarna då det automatiskt anpassade dessa för Vite som använts i
+                    projektet.</p>
+
+                <p>Eftersom projektet använder Vite angas npm run build som byggkommando och dist som mapp för de
+                    färdiga filerna. När inställningarna var klara startade jag publiceringen med Deploy.</p>
+
+                <p>Efter att webbplatsen hade publicerats skapade Vercel en webbadress som jag kunde använda för att
+                    besöka den färdiga webbplatsen. Jag testade även att navigeringen och utseendet fungerade på
+                    samtliga sidor. Själva publiceringen gick igenom utan fel men på grund av felplacerad JavaScript
+                    behövdes ändringar göras i koden för att sidan skulle fungera helt felfritt.</p>
+
+                <p>En fördel med arbetssättet att använda sig av plattformar som Vercel är kopplingen direkt till
+                    GitHub. När ändringar görs i projektet skickas dessa via GitHub, och då startar Vercel automatiskt
+                    en ny publicering. Det innebär att man inte behöver ladda upp filerna manuellt varje gång.</p>
+
+            </section>
     </main>
 
-        <footer>
-            <p>Daniela giovanella</p>
-            <p>dagi2500@student.miun.se</p>
-        </footer>
+    <footer>
+        <p>Daniela giovanella</p>
+        <p>dagi2500@student.miun.se</p>
+    </footer>
 
 </body>
 
