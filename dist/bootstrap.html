@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Grundläggande CSS-->
+
+    <!-- Bootstrap CSS -->
+
+    <!-- Egen CSS -->
+
+    <title>Bootstrap</title>
+  <script type="module" crossorigin src="/assets/bootstrap-CN8mKTYv.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/bootstrap-Db3-U3Mq.css">
+  <link rel="stylesheet" crossorigin href="/assets/style-CSw_6hcL.css">
+</head>
+
+<body>
+    <!--Header med navigation-->
+    <header>
+        <!--Navigation med Bootstrap. navbar-expand-lg bestämmer brytbunkt för när meny fälls ihop-->
+        <nav class="navbar navbar-expand-lg">
+
+            <!--Container för navigeringens innehåll 
+            Använder hela tillgängliga bredd-->
+            <div class="container-fluid">
+
+                <!--Knapp som visas när menyn fälls ihop på mindre skärmar
+                data-bs-toggle aktiverar Bootstraps collapse-funktion.
+                data-bs-target pekar ut vilken del av menyn som ska visas.
+                -->
+                <!--Med Aria som anpassning-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Öppna navigering">
+
+                    <!--Ikon på knappe med tre streck -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!--Innehåll som fälls ihop på mindre skärmar -->
+
+                <!--collapse gör att menyn kan fällas ihop
+                navbar-collapse anpassar innehållet till navigeringen.
+                id används av menyknappen för att hitta rätt meny.
+                -->
+                <div class="collapse navbar-collapse" id="mainNavbar">
+
+                    <!--Navigeringslänkar
+                    Active för markering av aktuell sida
+                    Anpassning med Aria för aktuell sida-->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Start</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="bootstrap.html" aria-current="page">Bootstrap</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="tailwind.html">Tailwind</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="publish.html">Publicering</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </nav>
+    </header>
+    <main>
+        <!-- Introduktion -->
+        <section class="mt-4">
+            <!--Huvudrubrik. Med avstånd och textfärg-->
+            <h1 class="mb-4">Ramverk: Bootstrap</h1>
+
+            <!-- Information om ramverket -->
+            <!--Rubrik för sektionen. Med avstånd och textfärg-->
+            <h2 class="mb-4">Om Bootstrap</h2>
+            <p>Bootstrap är ett CSS-ramverk som erbjuder färdiga klasser och komponenter för att enklare kunna bygga
+                webbplatser. Det erbjuder bland annat lösningar för design, navigering, tabeller, formulär och
+                responsiva layouter.</p>
+            <p>Genom att använda ramverket går det snabbt att skapa grundläggande design utan att behöva skriva all
+                CSS-kod från grunden själv. Bootstrap använder sig av HTML, CSS och Javascript där vissa komponenter som
+                exempelvis responsiv navigering kräver ramverkets Javascript för att fungera.</p>
+
+            <!--Länk till Bootstrap-->
+            <p class="fw-bold">Mer om Bootstrap finns på deras webbplats:<a href="https://getbootstrap.com/"
+                    target="_blank" rel="noopener noreferrer" class="bootstrap-link">Bootstrap</a></p>
+        </section>
+
+        <!--Fördelar och nackdelar. mt-4 för avstånd-->
+        <section class="mt-4">
+            <!--Rubrik för sektionen. Med avstånd och textfärg-->
+            <h2 class="mb-4">Fördelar och nackdelar</h2>
+
+            <!--Lista för för och nackdelar.
+            row skapar en rad i Bootstraps Grid-system.
+            g-4 skapar mellanrum mellan kolumnerna.
+            -->
+            <div class="row g-4">
+
+                <!--Kolumn med fördelar
+                col-12 och col-md-6 justerar responsiviteten från hela bredden på mindre till halva bredd på större skärm-->
+                <div class="col-12 col-md-6">
+
+                    <h3 class="mb-2">Fördelar</h3>
+
+                    <!--Lista med fördelar-->
+                    <ul class="mb-0">
+                        <li class="mb-2">Det går snabbt att förstå och komma igång med färdiga klasser och komponenter.
+                        </li>
+                        <li class="mb-2"">Det finns många inbyggda lösningar för vanliga komponenter som tex navigering, tabeller och formulär.</li>
+                        <li class=" mb-2">Deras grid system gör det enkelt att skapa responsiva layouter.</li>
+                        <li class=" mb-2">Dokumentationen innehåller tydliga exempel som gör det lätt att lära och
+                            förstå hur komponenterna ska användas.</li>
+                        <li class=" mb-2">Det går att kombinera Bootstrap med egen CSS för att anpassa utseendet.</li>
+                    </ul>
+                </div>
+
+                <!--Kolumn med nackdelar
+                col-12 och col-md-6 justerar responsiviteten från hela bredden på mindre till halva bredd på större skärm--->
+                <div class="col-12 col-md-6">
+                    <h3 class="mb-2">Nackdelar</h3>
+
+                    <!--Lista med nackdelar-->
+                    <ul class="mb-0">
+                        <li class="mb-2">Det färdiga utseendet kan ibland vara svårt att anpassa till en helt egen
+                            design.</li>
+                        <li class="mb-2">HTML-koden kan innehålla många klasser när komponenter byggs upp.</li>
+                        <li class="mb-2">Vissa komponenter kräver att man inkluderar Bootstraps JavaScript.</li>
+                    </ul>
+                </div>
+        </section>
+
+        <section class="mt-4">
+            <!--Rubrik för sektionen. Med avstånd och textfärg-->
+            <h2 class="mb-4">Utvärdering av ramverk</h2>
+
+            <p>Under arbetet med Bootstrap så har jag framförallt uppskattat deras färdiga lösningar för vanliga
+                komponenter. Det som uppskattades mest var hur snabbt det gick att skapa en responsiv navigering med
+                hamburgermeny som också bara krävde en rad med länkad JavaScript. </p>
+
+            <p>När det kommer till friheten för designen så går det att anpassa Bootraps med egen CSS vilket uppskattas
+                då flera färdiga komponenter har en färdig styling som kan vara svår att anpassa till en egen grafisk
+                profil. I denna laboration använde jag dock sparsamt med egen CSS för att testa lägga fokus på hur man
+                kan jobba med dessa färdiga klasser och komponenter.</p>
+
+            <p>Dokumentationen var tydlig med hur bland annat tabeller, formulär och knappar kan stylas med deras
+                färdiga klasser, så det var väldigt enkelt att testa sig fram bland dessa utan att det krävdes mycket
+                ändringar i koden.</p>
+        </section>
+
+        <!--TABELL OCH FORMULÄR-->
+
+        <!--TABELL-->
+        <!-- Komponentöversikt -->
+        <section class="mt-4">
+            <h2 class="mb-4">Tabell: Komponentöversikt</h2>
+            <p>Här visas några vanliga komponenter som används i webbdesign.</p>
+
+            <!--wrapper för att göra tabellen responsiv. Skrollas i sidled-->
+            <div class="table-responsive">
+
+                <!--table ger tabellen Bootstraps grundläggande utseende.
+                    table-success ger tabellhuvudet en grön färg.
+                    table-striped ger varannan rad en annan bakgrundsfärg.
+                    table-hover markerar raden när man hovrar över den.
+                    table-bordered lägger till ramar runt cellerna.
+                    -->
+                <table class="table table-success table-striped table-hover table-bordered">
+                    <!--Tabellens rubrikrad-->
+                    <thead>
+                        <tr>
+                            <th>Komponent</th>
+                            <th>Användningsområde</th>
+                            <th>Responsiv</th>
+                            <th>Svårighetsgrad</th>
+                        </tr>
+                    </thead>
+
+                    <!--Tabellens innehåll-->
+                    <tbody>
+                        <tr>
+                            <td>Navigation</td>
+                            <td>Navigera mellan sidor</td>
+                            <td>Ja</td>
+                            <td>Låg</td>
+                        </tr>
+                        <tr>
+                            <td>Button</td>
+                            <td>Knappar och interaktioner</td>
+                            <td>Ja</td>
+                            <td>Låg</td>
+                        </tr>
+                        <tr>
+                            <td>Card</td>
+                            <td>Samla innehåll i en yta</td>
+                            <td>Ja</td>
+                            <td>Medel</td>
+                        </tr>
+                        <tr>
+                            <td>Table</td>
+                            <td>Visa information i rader och kolumner</td>
+                            <td>Ja</td>
+                            <td>Medel</td>
+                        </tr>
+                        <tr>
+                            <td>Form</td>
+                            <td>Samla in information från användaren</td>
+                            <td>Ja</td>
+                            <td>Medel</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Formulär -->
+        <section class="mt-4">
+            <h2 class="mb-4">Lägg till komponent</h2>
+            <p>Använd formuläret för att registrera en ny komponent.</p>
+
+            <!--Grupperar formuläret
+            form-group är en egenskapad klass för gruppering-->
+            <form class="form-group">
+
+                <!--Fieldset för att gruppera formuläret-->
+                <fieldset>
+
+                    <!--mb-3 skapar marginal mellan fälten-->
+                    <div class="mb-3">
+                        <!--Komponentnamn
+                        form-label ger etiketten Bootstraps formulärstil
+                        form-control ger textfältet Bootstraps utseende-->
+                        <label for="component-name" class="form-label">Komponentnamn</label>
+                        <input type="text" id="component-name" name="component-name" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <!--Användningsområde
+                        form-label ger etiketten Bootstraps formulärstil
+                        form-control ger textfältet Bootstraps utseende-->
+                        <label for="usage" class="form-label">Användningsområde</label>
+                        <input type="text" id="usage" name="usage" class="form-control">
+                    </div>
+
+                    <!--Checkbox för responsivitet med Bootstraps styling-->
+                    <div class="form-check mb-3">
+                        <label class="form-check-label" for="responsive">Responsiv</label>
+                        <input class="form-check-input" type="checkbox" id="responsive" name="responsive">
+                    </div>
+
+                    <!--Välj svårighetsgrad-->
+                    <div class="mb-3">
+                        <!--form-label ger etiketten Bootstraps formulärstil-->
+                        <label for="difficulty" class="form-label">Svårighetsgrad</label>
+                        <!--form-select ger selectmenyn Bootstraps utseende-->
+                        <select class="form-select" id="difficulty" name="difficulty">
+                            <option value="">Välj svårighetsgrad</option>
+                            <option value="low">Låg</option>
+                            <option value="medium">Medel</option>
+                            <option value="high">Hög</option>
+                        </select>
+                    </div>
+
+                    <!--Kommentarsfältet
+                    form-label ger etiketten Bootstraps formulärstil
+                    form-control ger textarea samma stil som textfälten-->
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">Kommentar</label>
+                        <textarea class="form-control" id="comment" name="comment"></textarea>
+                    </div>
+
+                    <!--Knapp för att skicka formulär
+                    btn ger knappen grundläggande Bootstrap-styling
+                    btn-success ger den en grön färg
+                    w-100 gör att knappen tar upp hela formulärets bredd-->
+                    <button type="submit" class="btn btn-success w-100"">Lägg till komponent</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Daniela giovanella</p>
+        <p>dagi2500@student.miun.se</p>
+    </footer>
+
+    <!--Bootstrap javascript som behövs för att menyknappen ska fungera-->
+    <
+
+</body>
+
+</html>
