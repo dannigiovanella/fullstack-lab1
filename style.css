@@ -90,6 +90,12 @@ main {
     border-right: 1px solid #D0D0D0;
 }
 
+/*Sektioner*/
+section{
+    max-width: 65ch;
+    padding-bottom: 2rem;
+}
+
 /*Footer */
 footer {
     background-color: var(--color-white);
