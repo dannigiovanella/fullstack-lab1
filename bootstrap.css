@@ -74,6 +74,13 @@ h3 {
     border-width: 2px;
 }
 
+/*Länkfärg (i text)*/
+/*Länk till Bootstraps webbplats*/
+.bootstrap-link {
+    margin-left: 0.3rem;
+    color: var(--color-purple);
+}
+
 /*TABELL*/
 
 /*FORMULÄR*/

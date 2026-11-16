@@ -78,14 +78,20 @@
         <section class="mt-4">
             <!--Huvudrubrik. Med avstånd och textfärg-->
             <h1 class="mb-4">Ramverk: Bootstrap</h1>
-            <p>Introduktion till Bootstrap och dess användningsområden.</p>
-        </section>
 
-        <!-- Information om ramverket -->
-        <section class="mt-4">
+            <!-- Information om ramverket -->
             <!--Rubrik för sektionen. Med avstånd och textfärg-->
             <h2 class="mb-4">Om Bootstrap</h2>
-            <p>Information om ramverket och hur det fungerar</p>
+            <p>Bootstrap är ett CSS-ramverk som erbjuder färdiga klasser och komponenter för att enklare kunna bygga
+                webbplatser. Det erbjuder bland annat lösningar för design, navigering, tabeller, formulär och
+                responsiva layouter.</p>
+            <p>Genom att använda ramverket går det snabbt att skapa grundläggande design utan att behöva skriva all
+                CSS-kod från grunden själv. Bootstrap använder sig av HTML, CSS och Javascript där vissa komponenter som
+                exempelvis responsiv navigering kräver ramverkets Javascript för att fungera.</p>
+
+            <!--Länk till Bootstrap-->
+            <p class="fw-bold">Mer om Bootstrap finns på deras webbplats:<a href="https://getbootstrap.com/"
+                    target="_blank" rel="noopener noreferrer" class="bootstrap-link">Bootstrap</a></p>
         </section>
 
         <!--Fördelar och nackdelar. mt-4 för avstånd-->
@@ -105,11 +111,15 @@
 
                     <h3 class="mb-2">Fördelar</h3>
 
-                    <!-- list-unstyled tar bort listans punkter och indrag -->
-                    <ul class="list-unstyled mb-0">
-                        <li class="mb-2">Fördel 1</li>
-                        <li class="mb-2"">Fördel 2</li>
-                        <li class=" mb-2">Fördel 3</li>
+                    <!--Lista med fördelar-->
+                    <ul class="mb-0">
+                        <li class="mb-2">Det går snabbt att förstå och komma igång med färdiga klasser och komponenter.
+                        </li>
+                        <li class="mb-2"">Det finns många inbyggda lösningar för vanliga komponenter som tex navigering, tabeller och formulär.</li>
+                        <li class=" mb-2">Deras grid system gör det enkelt att skapa responsiva layouter.</li>
+                        <li class=" mb-2">Dokumentationen innehåller tydliga exempel som gör det lätt att lära och
+                            förstå hur komponenterna ska användas.</li>
+                        <li class=" mb-2">Det går att kombinera Bootstrap med egen CSS för att anpassa utseendet.</li>
                     </ul>
                 </div>
 
@@ -118,12 +128,32 @@
                 <div class="col-12 col-md-6">
                     <h3 class="mb-2">Nackdelar</h3>
 
-                    <!-- list-unstyled tar bort listans punkter och indrag -->
-                    <ul class="list-unstyled mb-0">
-                        <li class="mb-2">Nackdel 1</li>
-                        <li class="mb-2">Nackdel 2</li>
+                    <!--Lista med nackdelar-->
+                    <ul class="mb-0">
+                        <li class="mb-2">Det färdiga utseendet kan ibland vara svårt att anpassa till en helt egen
+                            design.</li>
+                        <li class="mb-2">HTML-koden kan innehålla många klasser när komponenter byggs upp.</li>
+                        <li class="mb-2">Vissa komponenter kräver att man inkluderar Bootstraps JavaScript.</li>
                     </ul>
                 </div>
+        </section>
+
+        <section class="mt-4">
+            <!--Rubrik för sektionen. Med avstånd och textfärg-->
+            <h2 class="mb-4">Utvärdering av ramverk</h2>
+
+            <p>Under arbetet med Bootstrap så har jag framförallt uppskattat deras färdiga lösningar för vanliga
+                komponenter. Det som uppskattades mest var hur snabbt det gick att skapa en responsiv navigering med
+                hamburgermeny som också bara krävde en rad med länkad JavaScript. </p>
+
+            <p>När det kommer till friheten för designen så går det att anpassa Bootraps med egen CSS vilket uppskattas
+                då flera färdiga komponenter har en färdig styling som kan vara svår att anpassa till en egen grafisk
+                profil. I denna laboration använde jag dock sparsamt med egen CSS för att testa lägga fokus på hur man
+                kan jobba med dessa färdiga klasser och komponenter.</p>
+
+            <p>Dokumentationen var tydlig med hur bland annat tabeller, formulär och knappar kan stylas med deras
+                färdiga klasser, så det var väldigt enkelt att testa sig fram bland dessa utan att det krävdes mycket
+                ändringar i koden.</p>
         </section>
 
         <!--TABELL OCH FORMULÄR-->
@@ -131,7 +161,7 @@
         <!--TABELL-->
         <!-- Komponentöversikt -->
         <section class="mt-4">
-            <h2 class="mb-4">Komponentöversikt</h2>
+            <h2 class="mb-4">Tabell: Komponentöversikt</h2>
             <p>Här visas några vanliga komponenter som används i webbdesign.</p>
 
             <!--wrapper för att göra tabellen responsiv. Skrollas i sidled-->
@@ -194,7 +224,7 @@
         <!-- Formulär -->
         <section class="mt-4">
             <h2 class="mb-4">Lägg till komponent</h2>
-            <p>Använd formuläret för att registrera en ny komponent i översikten.</p>
+            <p>Använd formuläret för att registrera en ny komponent.</p>
 
             <!--Grupperar formuläret
             form-group är en egenskapad klass för gruppering-->
@@ -265,4 +295,5 @@
     <script src=" ./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>
