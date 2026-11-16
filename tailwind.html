@@ -61,7 +61,7 @@
 
     <main>
         <!--Huvudrubrik med textstyling-->
-        <h1 class="text-4xl font-bold text-[#657A68]">CSS-ramverk: Tailwind</h1>
+        <h1 class="text-4xl font-bold text-[#657A68]">Ramverk: Tailwind</h1>
 
         <!-- Information om ramverket -->
         <!--mt-8 lägger till avstång över ssekton-->
@@ -69,7 +69,13 @@
             <!--Underrubrik med styling. mb--3 lägger till avstånd under rubrik-->
             <h2 class="mb-3 text-2xl font-semibold text-[#8C7899]">Om Tailwind</h2>
             <!--Informationstext-->
-            <p class="text-[#302F32]">Information om ramverket och hur det fungerar.</p>
+            <p class="text-[#302F32] mb-4">Tailwind CSS är ett CSS-ramverk som bygger på utility-klasser där man i
+                stället
+                för att använda färdiga komponenter bygger designen genom att kombinera mindre klasser direkt i
+                HTML-koden.
+                Dessa Tailwind-klasser används för att ange sånt som tex färger, textstorlek, avstånd, placering och
+                även styra layoterna responsivt utan att behöva skriva separat CSS.
+            </p>
             <!--Länk till Tailwind med styling-->
             <p class="font-bold">
                 Mer om Tailwind finns på deras webbplats:
@@ -94,7 +100,7 @@
             -->
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
 
-                <!-- Lista med fördelar -->
+                <!--Lista med fördelar-->
                 <div>
                     <!--Underrubrik med styling-->
                     <h3 class="mb-2 text-lg font-semibold text-[#657A68]">Fördelar</h3>
@@ -103,23 +109,45 @@
                     space-y-2 skapar mellanrum vertikalt
                     pl-5 lägger till vänsterpadding-->
                     <ul class="list-disc space-y-2 pl-5 text-[#302F32]">
-                        <li>Fördel 1</li>
-                        <li>Fördel 2</li>
-                        <li>Fördel 3</li>
+                        <li>Det finns en stor frihet att anpassa sånt som färger, storlekar och avstånd.</li>
+                        <li>Det går att bygga egna layouter och komponenter direkt i HTML.</li>
+                        <li>Responsiv design kan enkelt skapas med hjälp av inbyggda klasser.</li>
+                        <li>Dokumentationen är tydlig och innehåller exempel på hur klasserna fungerar som är enkla att
+                            följa.</li>
                     </ul>
                 </div>
 
-                <!-- Lista med nackdelar -->
+                <!--Lista med nackdelar-->
                 <div>
                     <!--Underrubrik med styling-->
                     <h3 class="mb-2 text-lg font-semibold text-[#657A68]">Nackdelar</h3>
 
                     <ul class="list-disc space-y-2 pl-5 text-[#302F32]">
-                        <li>Nackdel 1</li>
-                        <li>Nackdel 2</li>
+                        <li>Det finns inte samma utbud av färdiga komponenter som i Bootstrap.</li>
+                        <li>Man behöver själv bygga upp utseendet för exempelvis navigering, tabeller och formulär.</li>
+                        <li>Det kan krävas fler klasser för att skapa samma resultat som med Bootstrap.</li>
+                        <li>HTML-koden kan bli ganska omfattande när många klasser kombineras i varje element.</li>
                     </ul>
                 </div>
             </div>
+        </section>
+
+        <!--Utvärdering-->
+        <section class="mt-8">
+            <!--Underrubrik med styling-->
+            <h2 class="mb-4 text-2xl font-semibold text-[#8C7899]">Utvärdering av ramverk</h2>
+            <p class="mb-4">Det var relativt enkelt att komma igång med Tailwind då deras dokumentation var enkelt att följa och
+                gjorde det lätt att lära hur man jobbar med utility-klasser. Jag uppskattar den frihet som fanns i att
+                anpassa klassera efter egen design, men jämfört med Bootrstrap så tar byggandet av sidan lite längre tid
+                på detta sätt. Navigeringen i huvudmenyn är ett bra exempel på detta då skapandet av en hamburgermeny
+                också krävde egen Javascript till skillnad från Bootstrap där man enkelt kan importera funktionaliteten
+                för detta.</p>
+
+            <p>Jag tycker om kontrollen man har över designen, men det jag ser som mest användbart är hur enkelt det är
+                att skapa responsiv layout för olika brytpunkter utan att behöva media queries vilket gör att detta
+                ramverk kan vara att föredra framför helt egen CSS. Det negativa är hur snabbt HTML-koden kan bli
+                väldigt stor och rörig när flera klasser samsas under samma element.</p>
+
         </section>
 
         <!--TABELL OCH FORMULÄR-->
